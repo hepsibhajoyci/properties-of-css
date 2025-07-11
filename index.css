@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(250, 217, 173);
+}
+
+.flex-container{
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto;
+    box-shadow: 8px 8px 20px 0 rgba(0, 0, 0, 0.7);
+}
+.block1{
+    height: 300px;
+    width: 300px;
+    background-image: linear-gradient(to left,rgb(112, 10, 140),rgb(246, 57, 89));
+}
+#block2{
+    height: 300px;
+    width: 300px;
+    background-image: radial-gradient(yellow,orange,rgb(231, 116, 135)75%);
+    transition: width 2s;
+}
+#block2:hover{
+    width:200px;
+}
+.block3{
+    height: 300px;
+    width: 300px;
+    background-image:conic-gradient(rgb(73, 73, 242),rgb(28, 180, 28),rgb(229, 34, 34));
+    transition-duration: 2s;
+    transition-property: height;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+@media all(max-width:100px){
+    .block3
+    height: 300px;
+    width: 300px;
+    background-image:conic-gradient(rgb(73, 73, 242),rgb(28, 180, 28),rgb(229, 34, 34));
+    transition-duration: 2s;
+    transition-property: height;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+    
+}
+.block3:hover{
+    height: 100px;
+}
+.block4{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(209, 126, 242);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition-delay:height 2s;
+}
+.block4:hover{
+    height: 200px;
+}
